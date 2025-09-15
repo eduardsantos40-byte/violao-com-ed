@@ -1,0 +1,5 @@
+Assim que terminar esses testes, implementaremos:
+
+Extrator automático de cifras do YouTube
+Sistema de atualização remota de conteúdo
+Player completo de vídeos
