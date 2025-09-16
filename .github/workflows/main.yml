@@ -2,8 +2,8 @@ name: Build APK
 
 on:
   push:
-    branches: [ "main" ]   # ← dispara em todo push na branch main
-  workflow_dispatch:        # ← adiciona botão Run workflow
+    branches: [ "main" ]   # dispara em todo push na branch main
+  workflow_dispatch:        # adiciona botão Run workflow
 
 jobs:
   build:
@@ -13,13 +13,13 @@ jobs:
       - name: Checkout do repositório
         uses: actions/checkout@v3
 
-- name: Instalar dependências (Windows)
-  run: |
-    pip install --upgrade pip
-    pip install cython==0.29.36
-    pip install buildozer
-    pip install kivy==2.3.0
-    pip install kivymd==1.1.1
+      - name: Instalar dependências (Windows)
+        run: |
+          pip install --upgrade pip
+          pip install cython==0.29.36
+          pip install buildozer
+          pip install kivy==2.3.0
+          pip install kivymd==1.1.1
 
       - name: Build APK
         run: |
