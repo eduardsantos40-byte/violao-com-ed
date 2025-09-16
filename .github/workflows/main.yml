@@ -2,8 +2,8 @@ name: Build APK
 
 on:
   push:
-    branches: [ "main" ]
-  workflow_dispatch:
+    branches: [ "main" ]   # ← dispara em todo push na branch main
+  workflow_dispatch:        # ← adiciona botão Run workflow
 
 jobs:
   build:
